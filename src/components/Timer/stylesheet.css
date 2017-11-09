@@ -1,0 +1,151 @@
+body {
+	text-align: center;
+	font-family: "Josefin Sans", "Open Sans";
+	background-color: #2A3132;
+	color: white;
+}
+
+.timer {
+	height: 90vh;
+	width: 100%;
+	position: relative;
+}
+
+#wrapper {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	display: block;
+	height: 420px;
+	width: 470px;
+}
+
+#title {
+	font-size: 20px;
+	margin-bottom: 20px;
+	color: white;
+	margin: 12px;
+	text-align: left;
+}
+
+#time {
+	font-size: 60px;
+	margin-bottom: 0px;
+	vertical-align: middle;
+
+}
+
+#type {
+	font-size: 130%;
+	margin-top: 0px;
+	color: #90AFC5;
+}
+
+.timeSetTitle {
+	font-size: 15px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	color: #90AFC5;
+}
+
+.timeSet {
+	display: inline-block;
+	margin-right: 52px;
+	margin-left: 52px;
+	margin-bottom: 10px;
+
+	font-size: 30px;
+}
+
+.timeControls {
+	margin-top: 0px;
+}
+
+.timeSet div {
+	height: 20px;
+	width: 20px;
+	border-radius: 5px;
+	border: none;
+	/*background-color: #E8E8E8;*/
+	cursor: pointer;
+	display: inline-block;
+
+	-webkit-user-select: none; /* Chrome/Safari */
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* IE10+ */
+}
+
+#sessionLength {
+	height: 32px;
+	width: 35px;
+}
+
+#breakLength {
+	height: 32px;
+	width: 35px;
+}
+
+.timeSetButton:hover {
+	color: #336B87;
+}
+
+#pomodoroWrap {
+	margin-top: 10px;
+}
+
+#pomodoro {
+	height: 280px;
+	width: 280px;
+	border-radius: 50%;
+	border: solid #763626;
+	margin: auto;
+	position: relative;
+}
+
+#display {
+	position: relative;
+	top: 100px;
+}
+
+#pomodoroFiller {
+	position: absolute;
+	height: 270px;
+	width: 270px;
+	border-radius: 50%;
+	margin: auto;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	overflow: hidden;
+}
+
+/*#filler {
+	position: absolute;
+	height: 270px;
+	width: 270px;
+	background-color: #336B87;
+	top: 280px;
+}*/
+
+.startAnimation {
+	animation-name: filler;
+	animation-timing-function: linear;
+}
+
+@keyframes filler {
+	from {top: 270px;}
+	to {top: 0px;}
+}
+
+#buttons {
+	position: relative;
+	margin-top: 30px;
+}
+
+.buttonColor {
+	color: #336B87;
+}
