@@ -6,8 +6,8 @@ const INCREMENT = 'entries/INCREMENT';
 // Reducer helpers
 
 const createNewEntry = (_finishedSessions, _dateString) => ({
-  finishedSessions: _finishedSessions,
-  dateString: _dateString
+  dateString: _dateString,
+  finishedSessions: _finishedSessions
 })
 
 // Reducer
