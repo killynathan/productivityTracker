@@ -19,6 +19,10 @@ module.exports = {
       {
         test: /\.css$/,
         loader: ['style-loader', 'css-loader']
+      },
+      {
+        test: /\.(mp3|jpg|png)$/,
+        loader: ['file-loader']
       }
     ]
   },

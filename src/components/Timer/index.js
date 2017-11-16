@@ -5,6 +5,8 @@ import './stylesheet.css';
 import TimeSetter from './TimeSetter';
 import Display from './Display';
 import ControlButton from './ControlButton';
+// import dingAudioFile from '../../../_assets/ding.mp3';
+import dingAudioFile from './ding.mp3';
 
 const mapDispatchToProps = dispatch => ({
   incrementCompletedSessions: () => {
@@ -158,7 +160,8 @@ class TimerHelper extends Component {
   }
 
   playDing() {
-    var ding = new Audio('../../../_assets/ding.mp3');
+
+    var ding = new Audio(dingAudioFile);
     ding.play();
   }
 
