@@ -128,6 +128,7 @@ class TimerHelper extends Component {
 
     // time is up. transition states
     if (newTimeRemaining <= 0) {
+      this.playDing();
       // session -> break
       if (this.state.state === states.IN_SESSION) {
         this.setState({
@@ -156,7 +157,13 @@ class TimerHelper extends Component {
     }
   }
 
+  playDing() {
+    var ding = new Audio('../../../_assets/ding.mp3');
+    ding.play();
+  }
+
   handleCompletedSession() {
+
     // initial case where no entires yet
     if (this.props.state.entries.length == 0) {
       this.props.addEntry((new Date()).toDateString());

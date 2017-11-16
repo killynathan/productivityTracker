@@ -68,7 +68,7 @@ let Analytics = ({ entries, onNewEntryClick }) => (
     </NewDayButton>
     <Status>Completed sessions today: {getCurrentEntrysCompletions(entries)}</Status>
 
-    <LineChart width={800} height={400} data={entriesToGraphData(entries)} margin={{left: -30}} style={{margin: '0 auto'}}>
+    <LineChart width={800} height={400} data={entriesToGraphData(entries)} margin={{left: -25}} style={{margin: '0 auto'}}>
       <XAxis dataKey='dateString' stroke='white' />
       <YAxis stroke='white' />
       <CartesianGrid strokeDasharray="3 3" stroke='#696e6f'/>
