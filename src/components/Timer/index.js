@@ -30,9 +30,9 @@ class TimerHelper extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      sessionLength: 1500, //25 mins make into constant
-      breakLength: 300, // 5 mins
-      timeRemaining: 1500,
+      sessionLength: 5, //1500, //25 mins make into constant
+      breakLength: 5, //300, // 5 mins
+      timeRemaining: 5, //1500,
       state: states.ON_STANDBY,
       setIntervalId: null,
       isPaused: false
