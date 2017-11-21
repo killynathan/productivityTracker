@@ -38192,9 +38192,9 @@ var TimerHelper = function (_Component) {
     var _this = _possibleConstructorReturn(this, (TimerHelper.__proto__ || Object.getPrototypeOf(TimerHelper)).call(this, props));
 
     _this.state = {
-      sessionLength: 5, //1500, //25 mins make into constant
-      breakLength: 5, //300, // 5 mins
-      timeRemaining: 5, //1500,
+      sessionLength: 1500, //25 mins make into constant
+      breakLength: 300, // 5 mins
+      timeRemaining: 1500,
       state: states.ON_STANDBY,
       setIntervalId: null,
       isPaused: false
