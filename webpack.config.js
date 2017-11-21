@@ -5,7 +5,7 @@ module.exports = {
   output: {
     filename: 'main.bundle.js',
     path: path.resolve(__dirname, 'dist'),
-    publicPath: '/assets/'
+    publicPath: './dist/'
   },
   module: {
     loaders: [
@@ -22,7 +22,7 @@ module.exports = {
       },
       {
         test: /\.(mp3|jpg|png)$/,
-        loader: ['file-loader']
+        loader: 'file-loader'
       }
     ]
   },
